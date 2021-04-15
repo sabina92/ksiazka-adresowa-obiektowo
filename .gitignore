@@ -1,2 +1,3 @@
-.git/
-ksiazka_adresowa_obiektowe.cbp
+ksiazka_adresowa_obiektowe*
+bin/
+obj/
