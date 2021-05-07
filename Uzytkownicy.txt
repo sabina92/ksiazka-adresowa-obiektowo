@@ -1,4 +1,6 @@
-1|sdd|sadd|
-2|d|sd|
-3|dsd|sdsd|
-4|dd|dsd|
+1|jaka|wada|
+2|sdsd|dsd|
+3|sdsds|jaka|
+4|kaka|lala|
+5|kaa|ssa|
+6|sas|asa|

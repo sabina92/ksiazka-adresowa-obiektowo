@@ -15,6 +15,11 @@ void KsiazkaAdresowa::zmianaHaslaZalogowanegoUzytkownika()
     uzytkownikMenedzer.zmianaHaslaZalogowanegoUzytkownika();
 }
 
+void KsiazkaAdresowa::logowanieUzytkownika()
+{
+    uzytkownikMenedzer.ustawIdZalogowanegoUzytkownika();
+}
+
 
 
 
