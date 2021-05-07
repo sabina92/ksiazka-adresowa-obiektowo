@@ -132,3 +132,8 @@ int UzytkownikMenedzer::logowanieUzytkownika()
         idZalogowanegoUzytkownika = logowanieUzytkownika();
         return idZalogowanegoUzytkownika;
     }
+
+void UzytkownikMenedzer::wylogujUzytkownika()
+{
+    exit(0);
+}

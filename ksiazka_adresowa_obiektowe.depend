@@ -16,7 +16,7 @@
 1620415815 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\ksiazkaadresowa.cpp
 	"KsiazkaAdresowa.h"
 
-1620415995 c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\uzytkownikmenedzer.h
+1620416505 c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\uzytkownikmenedzer.h
 	<iostream>
 	<vector>
 	"Uzytkownik.h"
@@ -43,7 +43,7 @@
 1620391437 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\metodypomocnicze.cpp
 	"MetodyPomocnicze.h"
 
-1620416162 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\uzytkownikmenedzer.cpp
+1620416496 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\uzytkownikmenedzer.cpp
 	"UzytkownikMenedzer.h"
 
 1620410272 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\plikzuzytkownikami.cpp
