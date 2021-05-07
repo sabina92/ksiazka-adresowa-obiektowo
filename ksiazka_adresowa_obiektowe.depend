@@ -1,9 +1,9 @@
 # depslib dependency file v1.0
-1620415915 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\main.cpp
+1620416496 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\main.cpp
 	<iostream>
 	"KsiazkaAdresowa.h"
 
-1620415792 c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\ksiazkaadresowa.h
+1620418343 c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\ksiazkaadresowa.h
 	<iostream>
 	"UzytkownikMenedzer.h"
 
@@ -13,7 +13,7 @@
 1618518702 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\uzytkownik.cpp
 	"Uzytkownik.h"
 
-1620415815 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\ksiazkaadresowa.cpp
+1620416496 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\ksiazkaadresowa.cpp
 	"KsiazkaAdresowa.h"
 
 1620416505 c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\uzytkownikmenedzer.h
