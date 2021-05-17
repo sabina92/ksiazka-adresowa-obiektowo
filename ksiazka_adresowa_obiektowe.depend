@@ -1,7 +1,8 @@
 # depslib dependency file v1.0
-1620943844 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\main.cpp
+1621199162 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\main.cpp
 	<iostream>
 	"KsiazkaAdresowa.h"
+	<windows.h>
 
 1620943645 c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\ksiazkaadresowa.h
 	<iostream>
@@ -14,7 +15,7 @@
 1618518702 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\uzytkownik.cpp
 	"Uzytkownik.h"
 
-1620944166 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\ksiazkaadresowa.cpp
+1621115991 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\ksiazkaadresowa.cpp
 	"KsiazkaAdresowa.h"
 
 1620942024 c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\uzytkownikmenedzer.h
@@ -28,7 +29,7 @@
 	"PlikZUzytkownikami.h"
 	"MetodyPomocnicze.h"
 
-1620764573 c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\plikzuzytkownikami.h
+1621118511 c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\plikzuzytkownikami.h
 	<iostream>
 	<vector>
 	<fstream>
@@ -47,16 +48,16 @@
 1620942024 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\uzytkownikmenedzer.cpp
 	"UzytkownikMenedzer.h"
 
-1620764610 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\plikzuzytkownikami.cpp
+1621117366 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\plikzuzytkownikami.cpp
 	"PlikZUzytkownikami.h"
 
-1620852901 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\adresat.cpp
+1621113398 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\adresat.cpp
 	"Adresat.h"
 
 1620853023 c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\adresat.h
 	<iostream>
 
-1620944275 c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\adresatmenedzer.h
+1621118511 c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\adresatmenedzer.h
 	<iostream>
 	<vector>
 	<windows.h>
@@ -66,17 +67,18 @@
 	"MetodyPomocnicze.h"
 	"PlikZAdresatami.h"
 
-1620943798 c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\plikzadresatami.h
+1621296912 c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\plikzadresatami.h
 	<iostream>
 	<algorithm>
 	<fstream>
 	"MetodyPomocnicze.h"
 	"Adresat.h"
 	<vector>
+	<windows.h>
 
-1620944166 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\adresatmenedzer.cpp
+1621297408 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\adresatmenedzer.cpp
 	"AdresatMenedzer.h"
 
-1620943774 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\plikzadresatami.cpp
+1621297310 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\plikzadresatami.cpp
 	"PlikZAdresatami.h"
 

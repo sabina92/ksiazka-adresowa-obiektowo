@@ -4,6 +4,8 @@ void AdresatMenedzer::dodajAdresata()
 {
     Adresat adresat;
 
+    cout << plikZAdresatami.pobierzIdOstatniegoAdresata()<< endl;
+    Sleep(3000);
     system("cls");
     cout << " >>> DODAWANIE NOWEGO ADRESATA <<<" << endl << endl;
     adresat = podajDaneNowegoAdresata();
@@ -46,5 +48,30 @@ Adresat AdresatMenedzer::podajDaneNowegoAdresata()
 
 void AdresatMenedzer::wyswietlWszystkichAdresatow()
 {
-    plikZAdresatami.wyswietlWszystkichAdresatow();
+    system("cls");
+    if (!adresaci.empty())
+    {
+        cout << "             >>> ADRESACI <<<" << endl;
+        cout << "-----------------------------------------------" << endl;
+        for (int i = 0; i < adresaci.size(); i++)
+        {
+            wyswietlDaneAdresata(adresaci[i]);
+        }
+        cout << endl;
+    }
+    else
+    {
+        cout << endl << "Ksiazka adresowa jest pusta." << endl << endl;
+    }
+    system("pause");
+}
+
+void AdresatMenedzer::wyswietlDaneAdresata(Adresat adresat)
+{
+    cout << endl << "Id:                 " << adresat.pobierzIdAdresata() << endl;
+    cout << "Imie:               " << adresat.pobierzImieAdresata() << endl;
+    cout << "Nazwisko:           " << adresat.pobierzNazwiskoAdresata() << endl;
+    cout << "Numer telefonu:     " << adresat.pobierzNumerTelefonuAdresata() << endl;
+    cout << "Email:              " << adresat.pobierzEmailAdresata() << endl;
+    cout << "Adres:              " << adresat.pobierzAdresAdresata() << endl;
 }

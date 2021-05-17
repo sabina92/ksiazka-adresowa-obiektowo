@@ -18,7 +18,7 @@ void PlikZUzytkownikami::dopiszUzytkownikaDoPliku(Uzytkownik uzytkownik)
         {
             plikTekstowy << endl << liniaZDanymiUzytkownika ;
         }
-            plikTekstowy.close();
+        plikTekstowy.close();
     }
     else
         cout << "Nie udalo sie otworzyc pliku " << NAZWA_PLIKU_Z_UZYTKOWNIKAMI << " i zapisac w nim danych." << endl;
@@ -38,8 +38,8 @@ string PlikZUzytkownikami::zamienDaneUzytkownikaNaLinieZDanymiOddzielonaPionowym
 vector <Uzytkownik> PlikZUzytkownikami::wczytajUzytkownikowZPliku()
 {
     fstream plikTekstowy;
-   Uzytkownik uzytkownik;
-   vector <Uzytkownik> uzytkownicy;
+    Uzytkownik uzytkownik;
+    vector <Uzytkownik> uzytkownicy;
     string daneJednegoUzytkownikaOddzielonePionowymiKreskami = "";
 
     plikTekstowy.open(NAZWA_PLIKU_Z_UZYTKOWNIKAMI.c_str(), ios::in);
@@ -98,13 +98,13 @@ void PlikZUzytkownikami::zapiszWszystkichUzytkownikowDoPliku(vector <Uzytkownik>
 
     if (plikTekstowy.good() == true)
     {
-         for (int i = 0; i < uzytkownicy.size(); i++)
+        for (int i = 0; i < uzytkownicy.size(); i++)
         {
             liniaZDanymiUzytkownika = zamienDaneUzytkownikaNaLinieZDanymiOddzielonaPionowymiKreskami(uzytkownicy[i]);
 
             if (i == (uzytkownicy.size()-1))
             {
-               plikTekstowy << liniaZDanymiUzytkownika;
+                plikTekstowy << liniaZDanymiUzytkownika;
             }
             else
             {

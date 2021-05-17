@@ -5,6 +5,7 @@ bool PlikZAdresatami::dopiszAdresataDoPliku(Adresat adresat)
     string liniaZDanymiAdresata = "";
     fstream plikTekstowy;
 
+    cout << idOstatniegoAdresata << endl;
     plikTekstowy.open(NAZWAPLIKUZADRESATAMI.c_str(), ios::out | ios::app);
 
     if (plikTekstowy.good() == true)
@@ -19,7 +20,10 @@ bool PlikZAdresatami::dopiszAdresataDoPliku(Adresat adresat)
         {
             plikTekstowy << endl << liniaZDanymiAdresata;
         }
+        cout << idOstatniegoAdresata << endl;
         idOstatniegoAdresata++;
+        cout << idOstatniegoAdresata << endl;
+        Sleep(3000);
         plikTekstowy.close();
         return true;
     }
@@ -100,12 +104,15 @@ vector <Adresat> PlikZAdresatami::wczytajAdresatowZalogowanegoUzytkownikaZPliku(
     if (daneOstaniegoAdresataWPliku != "")
     {
         idOstatniegoAdresata = pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(daneOstaniegoAdresataWPliku);
+        cout << idOstatniegoAdresata << "idOstatniego" << endl;
     }
     return adresaci;
 }
 
 int PlikZAdresatami::pobierzIdOstatniegoAdresata()
 {
+    cout << idOstatniegoAdresata << endl;
+    Sleep(3000);
     return idOstatniegoAdresata;
 }
 
@@ -162,57 +169,5 @@ Adresat PlikZAdresatami::pobierzDaneAdresata(string daneAdresataOddzielonePionow
     return adresat;
 }
 
-int PlikZAdresatami::pobierzZPlikuIdOstatniegoAdresata()
-{
-    int idOstatniegoAdresata = 0;
-    string daneJednegoAdresataOddzielonePionowymiKreskami = "";
-    string daneOstaniegoAdresataWPliku = "";
-    fstream plikTekstowy;
-    plikTekstowy.open(NAZWAPLIKUZADRESATAMI.c_str(), ios::in);
 
-    if (plikTekstowy.good() == true)
-    {
-        while (getline(plikTekstowy, daneJednegoAdresataOddzielonePionowymiKreskami)) {}
-            daneOstaniegoAdresataWPliku = daneJednegoAdresataOddzielonePionowymiKreskami;
-            plikTekstowy.close();
-    }
-    else
-        cout << "Nie udalo sie otworzyc pliku i wczytac danych." << endl;
 
-    if (daneOstaniegoAdresataWPliku != "")
-    {
-        idOstatniegoAdresata = pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(daneOstaniegoAdresataWPliku);
-    }
-    return idOstatniegoAdresata;
-}
-
-void PlikZAdresatami::wyswietlWszystkichAdresatow()
-{
-    vector <Adresat> adresaci;
-    system("cls");
-    if (!adresaci.empty())
-    {
-        cout << "             >>> ADRESACI <<<" << endl;
-        cout << "-----------------------------------------------" << endl;
-        for (int i = 0; i < adresaci.size(); i++)
-        {
-            wyswietlDaneAdresata(adresaci[i]);
-        }
-        cout << endl;
-    }
-    else
-    {
-        cout << endl << "Ksiazka adresowa jest pusta." << endl << endl;
-    }
-    system("pause");
-}
-
-void PlikZAdresatami::wyswietlDaneAdresata(Adresat adresat)
-{
-    cout << endl << "Id:                 " << adresat.pobierzIdAdresata() << endl;
-    cout << "Imie:               " << adresat.pobierzImieAdresata() << endl;
-    cout << "Nazwisko:           " << adresat.pobierzNazwiskoAdresata() << endl;
-    cout << "Numer telefonu:     " << adresat.pobierzNumerTelefonuAdresata() << endl;
-    cout << "Email:              " << adresat.pobierzEmailAdresata() << endl;
-    cout << "Adres:              " << adresat.pobierzAdresAdresata() << endl;
-}

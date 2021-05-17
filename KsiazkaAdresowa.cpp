@@ -60,7 +60,7 @@ void KsiazkaAdresowa::wyswietlWszystkichAdresatow()
     }
     else
     {
-        cout << "Aby wyswietlic adresatow, nalezy sie najpierw zalgoowac" << endl;
+        cout << "Aby wyswietlic adresatow, nalezy sie najpierw zalogowac" << endl;
         system("pause");
     }
 }

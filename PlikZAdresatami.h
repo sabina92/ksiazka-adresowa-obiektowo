@@ -7,6 +7,7 @@
 #include "MetodyPomocnicze.h"
 #include "Adresat.h"
 #include <vector>
+#include <windows.h>
 
 using namespace std;
 
@@ -17,11 +18,9 @@ class PlikZAdresatami
 
 
     string zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(Adresat adresat);
-    bool czyPlikJestPusty();
+
     int pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
     Adresat pobierzDaneAdresata(string daneAdresataOddzielonePionowymiKreskami);
-    int pobierzZPlikuIdOstatniegoAdresata();
-    void wyswietlDaneAdresata(Adresat adresat);
 
 
 public:
@@ -33,7 +32,7 @@ public:
     int pobierzIdOstatniegoAdresata();
     string zamienPierwszaLitereNaDuzaAPozostaleNaMale(string tekst);
     int pobierzIdUzytkownikaZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
-    void wyswietlWszystkichAdresatow();
+    bool czyPlikJestPusty();
 
 };
 
