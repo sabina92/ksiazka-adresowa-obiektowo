@@ -4,8 +4,6 @@ void AdresatMenedzer::dodajAdresata()
 {
     Adresat adresat;
 
-    cout << plikZAdresatami.pobierzIdOstatniegoAdresata()<< endl;
-    Sleep(3000);
     system("cls");
     cout << " >>> DODAWANIE NOWEGO ADRESATA <<<" << endl << endl;
     adresat = podajDaneNowegoAdresata();

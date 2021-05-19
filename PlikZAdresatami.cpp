@@ -5,25 +5,15 @@ bool PlikZAdresatami::dopiszAdresataDoPliku(Adresat adresat)
     string liniaZDanymiAdresata = "";
     fstream plikTekstowy;
 
-    cout << idOstatniegoAdresata << endl;
     plikTekstowy.open(NAZWAPLIKUZADRESATAMI.c_str(), ios::out | ios::app);
 
     if (plikTekstowy.good() == true)
     {
         liniaZDanymiAdresata = zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(adresat);
 
-        if (czyPlikJestPusty() == true)
-        {
-            plikTekstowy << liniaZDanymiAdresata;
-        }
-        else
-        {
-            plikTekstowy << endl << liniaZDanymiAdresata;
-        }
-        cout << idOstatniegoAdresata << endl;
+        plikTekstowy << liniaZDanymiAdresata << endl;
+
         idOstatniegoAdresata++;
-        cout << idOstatniegoAdresata << endl;
-        Sleep(3000);
         plikTekstowy.close();
         return true;
     }
@@ -94,26 +84,39 @@ vector <Adresat> PlikZAdresatami::wczytajAdresatowZalogowanegoUzytkownikaZPliku(
                 adresaci.push_back(adresat);
             }
         }
-        daneOstaniegoAdresataWPliku = daneJednegoAdresataOddzielonePionowymiKreskami;
         plikTekstowy.close();
-
     }
     else
         cout << "Nie udalo sie otworzyc pliku i wczytac danych." << endl;
 
-    if (daneOstaniegoAdresataWPliku != "")
-    {
-        idOstatniegoAdresata = pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(daneOstaniegoAdresataWPliku);
-        cout << idOstatniegoAdresata << "idOstatniego" << endl;
-    }
     return adresaci;
 }
 
 int PlikZAdresatami::pobierzIdOstatniegoAdresata()
 {
-    cout << idOstatniegoAdresata << endl;
-    Sleep(3000);
-    return idOstatniegoAdresata;
+    string daneJednegoAdresataOddzielonePionowymiKreskami = "";
+    string daneOstaniegoAdresataWPliku = "";
+    string bufor = "";
+    idOstatniegoAdresata = 0;
+    fstream plikTekstowy;
+    plikTekstowy.open(NAZWAPLIKUZADRESATAMI.c_str(), ios::in);
+
+    if (plikTekstowy.good() == true)
+    {
+        while (getline(plikTekstowy, daneJednegoAdresataOddzielonePionowymiKreskami))
+        {
+             bufor = daneJednegoAdresataOddzielonePionowymiKreskami;
+             cout << bufor << "bufor" << endl;
+        }
+         idOstatniegoAdresata = pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(bufor);
+             return idOstatniegoAdresata;
+        plikTekstowy.close();
+    }
+    else
+    {
+        idOstatniegoAdresata = 0;
+    }
+ return idOstatniegoAdresata;
 }
 
 int PlikZAdresatami::pobierzIdUzytkownikaZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami)

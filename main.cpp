@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int komain()
+int ssmain()
 {
     KsiazkaAdresowa ksiazkaAdresowa("Uzytkownicy.txt", "Adresaci.txt");
 
@@ -24,7 +24,7 @@ int komain()
 int main()
 {
     PlikZUzytkownikami plikZUzytkownikami("uzytkownicy.txt");
-    PlikZAdresatami plikZAdresatami("Adresai.txt");
+    PlikZAdresatami plikZAdresatami("Adresaci.txt");
     KsiazkaAdresowa ksiazkaAdresowa("Uzytkownicy.txt", "Adresaci.txt");
     ksiazkaAdresowa.rejestracjaUzytkownika();
      ksiazkaAdresowa.logowanieUzytkownika();
@@ -33,4 +33,14 @@ int main()
    ksiazkaAdresowa.wyswietlWszystkichAdresatow();
 
     system("pause");
+}
+
+int cmain()
+{
+    PlikZAdresatami plikZAdresatami("Adresaci.txt");
+    int id = 0;
+    id = plikZAdresatami.pobierzIdOstatniegoAdresata();
+    cout << id << "id" << endl;
+
+    return 0;
 }
