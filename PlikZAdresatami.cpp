@@ -106,10 +106,9 @@ int PlikZAdresatami::pobierzIdOstatniegoAdresata()
         while (getline(plikTekstowy, daneJednegoAdresataOddzielonePionowymiKreskami))
         {
              bufor = daneJednegoAdresataOddzielonePionowymiKreskami;
-             cout << bufor << "bufor" << endl;
         }
          idOstatniegoAdresata = pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(bufor);
-             return idOstatniegoAdresata;
+        return idOstatniegoAdresata;
         plikTekstowy.close();
     }
     else

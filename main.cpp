@@ -30,6 +30,7 @@ int main()
      ksiazkaAdresowa.logowanieUzytkownika();
      plikZAdresatami.czyPlikJestPusty();
      ksiazkaAdresowa.dodajAdresata();
+     ksiazkaAdresowa.dodajAdresata();
    ksiazkaAdresowa.wyswietlWszystkichAdresatow();
 
     system("pause");
