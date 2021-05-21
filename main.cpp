@@ -26,9 +26,9 @@ int main()
     PlikZUzytkownikami plikZUzytkownikami("uzytkownicy.txt");
     PlikZAdresatami plikZAdresatami("Adresaci.txt");
     KsiazkaAdresowa ksiazkaAdresowa("Uzytkownicy.txt", "Adresaci.txt");
+    PlikTekstowy plikTekstowy();
     ksiazkaAdresowa.rejestracjaUzytkownika();
      ksiazkaAdresowa.logowanieUzytkownika();
-     plikZAdresatami.czyPlikJestPusty();
      ksiazkaAdresowa.dodajAdresata();
      ksiazkaAdresowa.dodajAdresata();
    ksiazkaAdresowa.wyswietlWszystkichAdresatow();

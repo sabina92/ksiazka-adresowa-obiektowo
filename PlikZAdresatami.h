@@ -30,7 +30,6 @@ public:
     int pobierzIdOstatniegoAdresata();
     string zamienPierwszaLitereNaDuzaAPozostaleNaMale(string tekst);
     int pobierzIdUzytkownikaZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
-    bool czyPlikJestPusty();
 
 };
 

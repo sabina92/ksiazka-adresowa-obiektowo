@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1621458066 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\main.cpp
+1621458947 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\main.cpp
 	<iostream>
 	"KsiazkaAdresowa.h"
 	<windows.h>
@@ -18,7 +18,7 @@
 1621335398 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\ksiazkaadresowa.cpp
 	"KsiazkaAdresowa.h"
 
-1620942024 c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\uzytkownikmenedzer.h
+1621634026 c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\uzytkownikmenedzer.h
 	<iostream>
 	<vector>
 	"Uzytkownik.h"
@@ -28,8 +28,9 @@
 	"Uzytkownik.h"
 	"PlikZUzytkownikami.h"
 	"MetodyPomocnicze.h"
+	"PlikTekstowy.h"
 
-1621118511 c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\plikzuzytkownikami.h
+1621633893 c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\plikzuzytkownikami.h
 	<iostream>
 	<vector>
 	<fstream>
@@ -49,7 +50,7 @@
 1620942024 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\uzytkownikmenedzer.cpp
 	"UzytkownikMenedzer.h"
 
-1621334510 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\plikzuzytkownikami.cpp
+1621633893 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\plikzuzytkownikami.cpp
 	"PlikZUzytkownikami.h"
 
 1621113398 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\adresat.cpp
@@ -68,7 +69,7 @@
 	"MetodyPomocnicze.h"
 	"PlikZAdresatami.h"
 
-1621382170 c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\plikzadresatami.h
+1621633893 c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\plikzadresatami.h
 	<iostream>
 	<algorithm>
 	<fstream>
@@ -80,6 +81,13 @@
 1621382750 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\adresatmenedzer.cpp
 	"AdresatMenedzer.h"
 
-1621458915 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\plikzadresatami.cpp
+1621633893 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\plikzadresatami.cpp
 	"PlikZAdresatami.h"
+
+1621633922 source:c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\pliktekstowy.cpp
+	"PlikTekstowy.h"
+
+1621633893 c:\users\sabin\desktop\codeblocks- programy\ksiazka_adresowa_obiektowe\pliktekstowy.h
+	<iostream>
+	<fstream>
 

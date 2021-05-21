@@ -11,6 +11,7 @@
 #include "Uzytkownik.h"
 #include "PlikZUzytkownikami.h"
 #include "MetodyPomocnicze.h"
+#include "PlikTekstowy.h"
 
 using namespace std;
 
