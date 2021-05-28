@@ -1,0 +1,6 @@
+1|1|Dsd|Ssd|dsds|dds|d|
+2|2|Sdsd|Fsf|sfsf|fdf|dfd|
+3|2||Dfd|fdf|fd|fdf|
+5|4|Kasia|Kowal|101|ka@pl|ul. Radosna 12, Krakow|
+6|4|Jan|Gorka|909|ja@pl|ul. Smukˆa 45, krakow|
+7|4|Franek|Kowal|3-3|fra@pl|ul. Kaw 45, krakow|

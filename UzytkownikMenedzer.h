@@ -10,6 +10,8 @@
 
 #include "Uzytkownik.h"
 #include "PlikZUzytkownikami.h"
+#include "MetodyPomocnicze.h"
+#include "PlikTekstowy.h"
 
 using namespace std;
 
@@ -24,10 +26,19 @@ class UzytkownikMenedzer
     bool czyIstniejeLogin(string login);
 
 public:
-    UzytkownikMenedzer(string nazwaPlikuZUzytkownikami) : plikZUzytkownikami(nazwaPlikuZUzytkownikami) {};
+    UzytkownikMenedzer(string nazwaPlikuZUzytkownikami) : plikZUzytkownikami (nazwaPlikuZUzytkownikami) {
+    idZalogowanegoUzytkownika = 0;
+    uzytkownicy = plikZUzytkownikami.wczytajUzytkownikowZPliku();
+    };
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
-    void wczytajUzytkownikowZPliku();
+    void zmianaHaslaZalogowanegoUzytkownika();
+    void zapiszWszystkichUzytkownikowDoPliku();
+    int logowanieUzytkownika();
+    void wylogujUzytkownika();
+    int pobierzIdZalogowanegoUzytkownika();
+
+
 };
 
 #endif // UZYTKOWNIKMENEDZER_H
