@@ -21,7 +21,7 @@ int ssmain()
     return 0;
 }
 
-int main()
+int rmain()
 {
     PlikZUzytkownikami plikZUzytkownikami("uzytkownicy.txt");
     PlikZAdresatami plikZAdresatami("Adresaci.txt");
@@ -42,6 +42,23 @@ int cmain()
     int id = 0;
     id = plikZAdresatami.pobierzIdOstatniegoAdresata();
     cout << id << "id" << endl;
+
+    return 0;
+}
+
+int cmmain()
+{
+    PlikZAdresatami plikZAdresatami("adresaci.txt");
+
+    plikZAdresatami.dopisz("tekst do dopisania");
+
+    return 0;
+}
+
+int main()
+{
+    KsiazkaAdresowa ksiazkaAdresowa("Uzytkownicy.txt", "Adresaci.txt");
+   ksiazkaAdresowa.wyswietlMenuGlowne();
 
     return 0;
 }

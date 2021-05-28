@@ -1,11 +1,15 @@
 #include "PlikTekstowy.h"
 
-bool PlikTekstowy::czyPlikJestPusty()
+void PlikTekstowy::usunPlik(string nazwaPlikuZRozszerzeniem)
 {
-    fstream plikTekstowy;
-    plikTekstowy.seekg(0, ios::end);
-    if (plikTekstowy.tellg() == 0)
-        return true;
+    if (remove(nazwaPlikuZRozszerzeniem.c_str()) == 0) {}
     else
-        return false;
+        cout << "Nie udalo sie usunac pliku " << nazwaPlikuZRozszerzeniem << endl;
+}
+
+void PlikTekstowy::zmienNazwePliku(string staraNazwa, string nowaNazwa)
+{
+    if (rename(staraNazwa.c_str(), nowaNazwa.c_str()) == 0) {}
+    else
+        cout << "Nazwa pliku nie zostala zmieniona." << staraNazwa << endl;
 }

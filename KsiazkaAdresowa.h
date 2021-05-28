@@ -33,6 +33,10 @@ public:
     void dodajAdresata();
     bool czyUzytkownikJestZalogowany();
     void wyswietlWszystkichAdresatow();
+    void wyswietlMenuGlowne();
+    char wybierzOpcjeZMenuGlownego();
+    char wybierzOpcjeZMenuUzytkownika();
+    char wczytajZnak();
 
 
 
