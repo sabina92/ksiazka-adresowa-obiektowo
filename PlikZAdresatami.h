@@ -37,7 +37,7 @@ public:
         if (plikTekstowy.good() == true)
         {
             if (czyPlikJestPusty())
-                plikTekstowy << "To jest pocz¹tek pliku" << endl;
+                plikTekstowy << "To jest poczatek pliku" << endl;
 
             plikTekstowy << tekst << endl;
         }

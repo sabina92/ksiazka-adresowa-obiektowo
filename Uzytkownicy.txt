@@ -1,4 +1,2 @@
-1|22|22|
-2|12|12|
-3|sa|sa|
-4|da|da|
+1|klok|kloki|
+2|julka|julka|

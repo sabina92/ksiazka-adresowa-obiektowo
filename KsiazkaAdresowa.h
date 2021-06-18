@@ -38,8 +38,6 @@ public:
     char wybierzOpcjeZMenuUzytkownika();
     char wczytajZnak();
 
-
-
 };
 
 #endif
